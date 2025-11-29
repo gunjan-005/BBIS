@@ -159,6 +159,25 @@ body {
     border: none;
     margin-top: 5px;
 }
+.scholarship-row {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.scholarship-box {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.scholarship-box h3 {
+    margin-top: 0;
+    color: #842A2D;   
+}
+
 #why-bbis ul li a {
     display: inline-block;
     margin-left: 10px;

@@ -1,0 +1,270 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.ku-topbar {
+    background-color: #842A2D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 40px;
+    font-size: 14px;
+}
+.ku-topbar-left {
+    display: flex;
+    align-items: center; /* vertically center logo and text */
+    gap: 15px; /* space between logo and text */
+}
+.ku-logo {
+    height: 55px;
+}
+
+.ku-topbar-right {
+    display: flex;
+    gap: 25px;
+    align-items: left;
+}
+.ku-department {
+    font-size: 15px; 
+    font-weight: bold;
+    color: #ffffff; 
+}
+.ku-topbar-right span {
+    white-space: nowrap;
+}
+.ku-topbar-right a.faq-link {
+    color: #fff;
+    background: #842A2D;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-left: 12px;
+}
+.ku-topbar-right a.faq-link:hover {
+    background: #842A2D;
+}
+
+/* Card design */
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: #842A2D;
+}
+
+.card ul, .card ol {
+    margin-left: 20px;
+    row-gap: 4px;
+}
+.timeline {
+    position: relative;
+    margin: 40px 0;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #c5c5c5;
+    border-radius: 2px;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.bubble {
+    width: 40px;
+    height: 40px;
+    background: #842A2D; 
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.content {
+    margin-left: 70px;
+    padding: 12px 18px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.content h3 {
+    margin-top: 0;
+    color: #842A2D;
+}
+
+
+.fee-box {
+    background: #e8f1ff;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.fee {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #842A2D;
+}
+
+
+.note {
+    color: #842A2D;
+    font-style: italic;
+    background: none;
+    padding: 0;
+    border: none;
+    margin-top: 5px;
+}
+#why-bbis ul li a {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 0.9em;
+    color: #0066cc;
+}
+
+.footer-wrapper {
+    width: 100%;
+    background-color: #842A2D;
+    color: white;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+
+.footer-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+.footer-content h2 {
+    color: #FFD5D6;
+}
+
+.footer-content p,
+.footer-content a {
+    color: white;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.newsletter-box input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.newsletter-box button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5A1C1E;
+    color: white;
+}
+
+.newsletter-box button {
+    padding: 10px 16px;
+    background-color: #5A1C1E;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter-box button:hover {
+    background-color: #451416;
+}
+
+/* H1 Styling */
+.faq-title {
+    color: #842A2D;
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* FAQ Container */
+.faq-item {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Question Button */
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    background: #f7f7f7;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.faq-question:hover {
+    background: #ececec;
+}
+
+/* Answer Section (hidden by default) */
+.faq-answer {
+    display: none;
+    padding: 15px 20px;
+    background: white;
+    border-top: 1px solid #ddd;
+}
+
+/* When active */
+.faq-item.active .faq-answer {
+    display: block;
+}

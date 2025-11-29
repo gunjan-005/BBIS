@@ -60,6 +60,7 @@ body {
     color: #842A2D;
     font-size: 32px;
     font-weight: 700;
+    gap: 15px;
 }
 /* Card design */
 .card {

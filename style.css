@@ -51,11 +51,16 @@ body {
     border-radius: 4px;
     text-decoration: none;
     margin-left: 12px;
+     gap: 15px;
 }
 .ku-topbar-right a.faq-link:hover {
     background: #842A2D;
 }
-
+.bbis-title {
+    color: #842A2D;
+    font-size: 32px;
+    font-weight: 700;
+}
 /* Card design */
 .card {
     background: white;

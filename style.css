@@ -61,6 +61,7 @@ body {
     font-size: 32px;
     font-weight: 700;
     gap: 15px;
+    text-align: center;
 }
 /* Card design */
 .card {
@@ -80,6 +81,12 @@ body {
     margin-left: 20px;
     row-gap: 4px;
 }
+.card {
+    width: 100%;
+    max-width: 800px;  /* ensures each card has a limit */
+    margin: 20px auto; /* centers each card individually */
+}
+
 .timeline {
     position: relative;
     margin: 40px 0;
@@ -293,3 +300,60 @@ body {
 .faq-item.active .faq-answer {
     display: block;
 }
+/* SIDEBAR */
+/* SIDEBAR */
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 90px;               
+    left: 0;
+    width: 230px;
+    bottom: 0;               /* Sidebar ends before footer area */
+    background: #f7f7f7;
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+    z-index: 5;              /* Lower than footer */
+}
+
+/* MAIN CONTENT */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    padding-top: 100px;      
+}
+
+/* FOOTER – bring it over the sidebar */
+footer, .footer-wrapper {
+    position: relative;
+    z-index: 10;              /* Higher than sidebar */
+    background: #842A2D;
+}
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #842A2D;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    color: #5d1e1f;
+}
+
+/* Move main content to the right so it doesn't hide behind sidebar */
+.container {
+    margin-left: 260px; /* must be > sidebar width */
+}
+
